@@ -16,17 +16,5 @@ When opening .m16 files Micro 16 syntax will automatically be enabled.
 3. Save micro16.tmLanguage inside the new directory
 
 ##License
-                DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-                       Version 2, December 2004
-
-	Copyright (C) 2015
-	
-	Everyone is permitted to copy and distribute verbatim or modified
-	copies of this license document, and changing it is allowed as long
-	as the name is changed.
-
-                DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-       TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
-
- 	0. You just DO WHAT THE FUCK YOU WANT TO.
-
+This project is covered by the WTFPL License. For more information see
+license.txt.

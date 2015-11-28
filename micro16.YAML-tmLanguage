@@ -1,6 +1,6 @@
 # [PackageDev] target_format: plist, ext: tmLanguage
 ---
-name: Micro 16
+name: Micro16
 scopeName: source.m16
 fileTypes: [m16]
 uuid: 3e01d958-3125-48c4-bf16-92584be3d335
@@ -36,6 +36,9 @@ patterns:
 - comment: Label reference
   name: string.interpolated.m16
   match: \.[a-zA-Z0-9]+
+- comment: Label definition
+  name: string.interpolated.m16
+  match: \:[a-zA-Z0-9]+
 - comment: Illegal characters
   name: invalid.illegal.m16
   match: \"|\'|\$|\%|\^|\*|\_|\=|\>|\?

@@ -7,7 +7,7 @@
 		<string>m16</string>
 	</array>
 	<key>name</key>
-	<string>Micro 16</string>
+	<string>Micro16</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -87,6 +87,14 @@
 			<string>Label reference</string>
 			<key>match</key>
 			<string>\.[a-zA-Z0-9]+</string>
+			<key>name</key>
+			<string>string.interpolated.m16</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Label definition</string>
+			<key>match</key>
+			<string>\:[a-zA-Z0-9]+</string>
 			<key>name</key>
 			<string>string.interpolated.m16</string>
 		</dict>
