@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>m16</string>
+	</array>
+	<key>name</key>
+	<string>Micro 16</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Comments</string>
+			<key>match</key>
+			<string>\#.+</string>
+			<key>name</key>
+			<string>comment.source.m16</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Register name</string>
+			<key>match</key>
+			<string>\R\d{1,2}</string>
+			<key>name</key>
+			<string>storage.type.source.m16</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Register name</string>
+			<key>match</key>
+			<string>(?&lt;=[^a-zA-Z0-9]|^)(wr|rd)(?=[^a-zA-Z0-9])</string>
+			<key>name</key>
+			<string>storage.type.source.m16</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Register name</string>
+			<key>match</key>
+			<string>(MAR|MBR)</string>
+			<key>name</key>
+			<string>keyword.operator.source.m16</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Operators (shift, goto, if)</string>
+			<key>match</key>
+			<string>(lsh|rsh)</string>
+			<key>name</key>
+			<string>keyword.operator.source.m16</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Control statements (goto, if)</string>
+			<key>match</key>
+			<string>(?&lt;=[^a-zA-Z0-9]|^)(if|goto)(?=[^a-zA-Z0-9])</string>
+			<key>name</key>
+			<string>keyword.control.statement.source</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Operators (negate, and)</string>
+			<key>match</key>
+			<string>\&amp;|\~</string>
+			<key>name</key>
+			<string>keyword.operator.source.m16</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Constants</string>
+			<key>match</key>
+			<string>(?&lt;=[^a-zA-Z0-9])(1|-1|0)(?=[^a-zA-Z0-9])</string>
+			<key>name</key>
+			<string>constant.numeric.source.m16</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Constants</string>
+			<key>match</key>
+			<string>(?&lt;=[^a-zA-Z0-9])(Z|N)(?=[^a-zA-Z0-9])</string>
+			<key>name</key>
+			<string>constant.character.m16</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Label reference</string>
+			<key>match</key>
+			<string>\.[a-zA-Z0-9]+</string>
+			<key>name</key>
+			<string>string.interpolated.m16</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Illegal characters</string>
+			<key>match</key>
+			<string>\"|\'|\$|\%|\^|\*|\_|\=|\&gt;|\?</string>
+			<key>name</key>
+			<string>invalid.illegal.m16</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.m16</string>
+	<key>uuid</key>
+	<string>3e01d958-3125-48c4-bf16-92584be3d335</string>
+</dict>
+</plist>

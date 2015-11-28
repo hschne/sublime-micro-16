@@ -1,2 +1,8 @@
-# sublime-micro-16
-Syntax definitions for Micro16-Code
+Micro16 Syntax Highlighting
+===========================
+
+
+
+Install with Package Control:
+-----------------------------
+

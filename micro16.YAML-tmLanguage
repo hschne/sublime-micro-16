@@ -1,0 +1,41 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Micro 16
+scopeName: source.m16
+fileTypes: [m16]
+uuid: 3e01d958-3125-48c4-bf16-92584be3d335
+
+patterns:
+- comment: Comments 
+  name: comment.source.m16
+  match: \#.+
+- comment: Register name
+  name: storage.type.source.m16
+  match: \R\d{1,2}
+- comment: Register name
+  name: storage.type.source.m16
+  match: (?<=[^a-zA-Z0-9]|^)(wr|rd)(?=[^a-zA-Z0-9])
+- comment: Register name
+  name: keyword.operator.source.m16
+  match: (MAR|MBR)
+- comment: Operators (shift, goto, if)
+  name: keyword.operator.source.m16
+  match: (lsh|rsh)
+- comment: Control statements (goto, if)
+  name: keyword.control.statement.source
+  match: (?<=[^a-zA-Z0-9]|^)(if|goto)(?=[^a-zA-Z0-9])
+- comment: Operators (negate, and)
+  name: keyword.operator.source.m16
+  match: \&|\~
+- comment: Constants
+  name: constant.numeric.source.m16
+  match: (?<=[^a-zA-Z0-9])(1|-1|0)(?=[^a-zA-Z0-9])
+- comment: Constants
+  name: constant.character.m16
+  match: (?<=[^a-zA-Z0-9])(Z|N)(?=[^a-zA-Z0-9])
+- comment: Label reference
+  name: string.interpolated.m16
+  match: \.[a-zA-Z0-9]+
+- comment: Illegal characters
+  name: invalid.illegal.m16
+  match: \"|\'|\$|\%|\^|\*|\_|\=|\>|\?
