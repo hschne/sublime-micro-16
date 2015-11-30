@@ -1,5 +1,7 @@
 # Micro16 Syntax Highlighting
 
+![Screenshot](Screenshot.png)
+
 This package provides syntax highlighting for Micro 16 code. Micro 16 is a
 low-level language used for academic purposes. 
 
